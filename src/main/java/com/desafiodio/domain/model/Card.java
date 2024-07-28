@@ -20,7 +20,7 @@ public class Card {
     //Porque name = "available_limit"?
     //Simples, a palavra limit pode ser palavra reservada
     //em alguns bancos de dados, para isso alteramos seu nome
-    @Column(name = "available_limit", scale = 13, precision = 2)
+    @Column(name = "available_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
     public Long getId() {

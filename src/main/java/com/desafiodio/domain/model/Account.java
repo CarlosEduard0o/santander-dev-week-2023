@@ -21,19 +21,19 @@ public class Account {
 
     private String agency;
 
-    //@Column(precision = 2, scale = 13) diz que
+    //@Column(precision = 13, scale = 2) diz que
     //balance será um valor com 11 inteiros e 2
     //decimais, exemplo 10101010101.10
     //nullable = false diz que não aceita valor nulo
-    // @Column(nullable = false, scale = 13, precision = 2)
+    // @Column(nullable = false, precision = 13, scale = 2)
 
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     private BigDecimal balance;
 
     //Porque name = "additional_limit"?
     //Simples, a palavra limit pode ser palavra reservada
     //em alguns bancos de dados, para isso alteramos seu nome
-    @Column(name = "additional_limit", scale = 13, precision = 2)
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
     public Long getId() {
