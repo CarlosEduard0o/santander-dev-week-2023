@@ -13,7 +13,10 @@ import com.desafiodio.domain.model.User;
  * desta minha entidade, que é o id.
  */
 
- @Repository
+@Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    
+ 
+    //O spring já entende que o existsByAccountNumber 
+    //precisa acessar e fazer um JOIN em uma tabela secundária
+    boolean existsByAccountNumber(String accountNumber);
 }

@@ -1,0 +1,11 @@
+# Produção, para comunicar com o banco de dados provisionado no RailWay
+# A primeira vez que rodar a aplicação, ddl-auto tem que ser create
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate

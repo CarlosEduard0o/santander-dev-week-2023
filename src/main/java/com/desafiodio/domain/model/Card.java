@@ -42,7 +42,7 @@ public class Card {
     public BigDecimal getLimit() {
         return limit;
     }
-    
+
     public void setLimit(BigDecimal limit) {
         this.limit = limit;
     }

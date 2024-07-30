@@ -77,14 +77,6 @@ public class User {
         this.account = account;
     }
 
-    public List<Feature> getFeatures() {
-        return features;
-    }
-
-    public void setFeatures(List<Feature> features) {
-        this.features = features;
-    }
-
     public Card getCard() {
         return card;
     }
@@ -93,10 +85,18 @@ public class User {
         this.card = card;
     }
 
+    public List<Feature> getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(List<Feature> features) {
+        this.features = features;
+    }
+
     public List<News> getNews() {
         return news;
     }
-    
+
     public void setNews(List<News> news) {
         this.news = news;
     }
